@@ -36,7 +36,7 @@ if [ -f /etc/debian_version ]; then
   apt-get install -y git python-setuptools curl
 elif [ -f /etc/redhat-release ]; then
   OS=redhat
-  yum -y install git MySQL-python curl
+  yum -y install git MySQL-python curl python-pip
 else
     echo "Unsupported OS"
     exit 1
@@ -46,7 +46,6 @@ fi
 # Instal python dependencies
 # This is platform-independent
 
-easy_install pip
 pip install flask gunicorn PyMySQL
 
 
