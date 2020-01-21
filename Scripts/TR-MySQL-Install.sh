@@ -9,4 +9,4 @@ echo 'mysql-server-5.7 mysql-server/root_password_again password root' > /var/tm
 debconf-set-selections /var/tmp/dss.1
 debconf-set-selections /var/tmp/dss.2
 
-apt-get -y install mysql-server-5.7
+apt-get install mysql-server-5.7 -y
