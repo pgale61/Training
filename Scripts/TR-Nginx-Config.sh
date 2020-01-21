@@ -1,4 +1,4 @@
-#!/opt/scalarizr/embedded/bin/python
+#!/usr/bin/python
 
 nginx_config_file = '/etc/nginx/nginx.conf'
 nginx_reload_command = 'service nginx restart'
