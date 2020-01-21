@@ -33,7 +33,7 @@ PID_FILE="/var/run/webapp.${PORT}.pid"
 if [ -f /etc/debian_version ]; then
   OS=debian
   apt-get update
-  apt-get install -y git python-setuptools curl
+  apt-get install -y git python-setuptools curl python-pip
 elif [ -f /etc/redhat-release ]; then
   OS=redhat
   yum -y install git MySQL-python curl python-pip
