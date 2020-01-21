@@ -3,8 +3,8 @@
 sudo apt-get update
 sudo apt-get install dialog apt-utils -y
 
-dpkg-reconfigure debconf
 export DEBIAN_FRONTEND="noninteractive"
+dpkg-reconfigure debconf
 
 echo 'mysql-server-5.7 mysql-server/root_password password root' > /var/tmp/dss.1
 echo 'mysql-server-5.7 mysql-server/root_password_again password root' > /var/tmp/dss.2
